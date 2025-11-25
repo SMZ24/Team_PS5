@@ -14,19 +14,19 @@ Simple command-line Student Grade Monitoring System implemented in C++ using an 
 - `studentrecord1.csv` — example CSV data (if present).
 
 ## Build
-Requires a C++ compiler (tested with `g++`). From the project folder `PS5Unfucked` run:
+### Prerequisites
+
+- C++ compiler with C++11 support (g++, clang++, etc.)
+- Make (optional, for using Makefile)
+
+### Compilation Options
+
 
 ```powershell
 cd c:\hmm\Team_PS5\PS5Unfucked
 g++ -o program.exe main.cpp AVLTree.cpp AVLNode.cpp -std=c++17
 ```
 
-## Run
-From the same folder:
-
-```powershell
-.\program.exe
-```
 
 Follow the menu to add, update, search, delete, display, save, or load student records.
 
