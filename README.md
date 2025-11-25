@@ -23,8 +23,10 @@ Simple command-line Student Grade Monitoring System implemented in C++ using an 
 
 
 ```powershell
-cd c:\hmm\Team_PS5\PS5Unfucked
+#compile
 g++ -o program.exe main.cpp AVLTree.cpp AVLNode.cpp -std=c++17
+# Run
+GradeSystem.exe
 ```
 
 
