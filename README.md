@@ -16,7 +16,7 @@ Simple command-line Student Grade Monitoring System implemented in C++ using an 
 ## Build
 ### Prerequisites
 
-- C++ compiler with C++11 support (g++, clang++, etc.)
+- C++ compiler with C++17 support (g++, clang++, etc.)
 - Make (optional, for using Makefile)
 
 ### Compilation Options
