@@ -19,7 +19,7 @@ bool isValidCourse(const std::string &str) {
   if (str.empty())
     return false;
   for (char c : str) {
-    if (!std::isalnum(c) && c != ' ' && c != '-') {
+    if (!std::isalnum(c) && c != ' ' && c != '-' && c != '.') {
       return false;
     }
   }
@@ -168,14 +168,15 @@ int main() {
       std::cout << "\nAll Students:\n";
       tree.display();
     } else if (choice == 6) {
-      filename = getStringInput("Enter filename: ", false);
+      filename = getStringInput("Enter filename (with extension, e.g., data.csv): ", false);
       tree.saveToFile(filename);
       std::cout << "Data saved to file.\n";
     } else if (choice == 7) {
-      filename = getStringInput("Enter filename: ", false);
+      filename = getStringInput("Enter filename (with extension, e.g., data.csv): ", false);
       tree.loadFromFile(filename);
       std::cout << "Data loaded from file.\n";
     } else if (choice == 8) {
+      std::cout << "Exiting program. Goodbye!\n"; 
       break;
     }
   }
