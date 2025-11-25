@@ -1,72 +1,125 @@
-# Student Grade Monitoring System
+# **Student Grade Monitoring System**
 
-Simple command-line Student Grade Monitoring System implemented in C++ using an AVL tree.
+## **1. Project Overview**
 
-## Overview
-- Maintains student records (student_ID, name, course, grade, GPA) in an AVL tree for balanced O(log n) insert/search/update/delete.
-- Can save and load records to/from a CSV file.
-- Menu-driven CLI for adding, updating, searching, deleting, displaying, saving, and loading records.
+The **Student Grade Monitoring System** is a command-line application designed to efficiently manage and monitor student grades. It supports adding, updating, searching, deleting, and displaying student records in a sorted manner.
 
-## Files
-- `main.cpp` — CLI and input validation.
-- `AVLTree.h` / `AVLTree.cpp` — AVL tree implementation and file I/O (save/load CSV).
-- `AVLNode.h` / `AVLNode.cpp` — Node implementation for the AVL tree.
-- `studentrecord1.csv` — example CSV data (if present).
-
-## Build
-### Prerequisites
-
-- C++ compiler with C++17 support (g++, clang++, etc.)
-- Make (optional, for using Makefile)
-
-### Compilation Options
-
-
-```powershell
-#compile
-g++ -o program.exe main.cpp AVLTree.cpp AVLNode.cpp -std=c++17
-# Run
-GradeSystem.exe
-```
-
-
-Follow the menu to add, update, search, delete, display, save, or load student records.
-
-## CSV format
-Each saved line is a CSV record with the fields in order:
-```
-student_ID,name,course,grade,GPA
-```
-Example:
-```
-12345,Jane Doe,Math 101,92.5,4.00
-```
-When saving/loading, provide the filename including extension (for example `data.csv`).
-
-## Notes
-- File I/O is handled by the `AVLTree` methods `saveToFile` and `loadFromFile`.
-- The program expects filenames with an extension (like `.csv`) when saving/loading.
-
-## Sources (pseudocode and algorithms)
-The algorithm references used in the project are from GeeksforGeeks as listed in the project document:
-
-- "Insertion in an AVL Tree", GeeksforGeeks — https://www.geeksforgeeks.org/dsa/insertion-in-an-avl-tree/
-- "Deletion in an AVL Tree", GeeksforGeeks — https://www.geeksforgeeks.org/dsa/deletion-in-an-avl-tree/
-- "Search in an AVL Tree", GeeksforGeeks — https://www.geeksforgeeks.org/dsa/avl-trees-containing-a-parent-node-pointer/
-- "Inorder Traversal of Binary Tree", GeeksforGeeks — https://www.geeksforgeeks.org/dsa/inorder-traversal-of-binary-tree/
-
-
-## Authors
-Team PS5
-
-## License
-This project is created for educational purposes as part of CSC 307 coursework.
-
-## Acknowledgement
-- Course Instructor: Prof. Chad McDaniel
-- GeeksforGeeks for AVL Tree algorithm references
-- Team PS5 members for collaborative design and implementation
+To ensure high performance even with large datasets, the system uses an **AVL Tree** (a self-balancing Binary Search Tree). This guarantees that essential operations: **insertion, deletion, search, and update**, run in **O(log n)** time, preventing the slowdowns common in unbalanced BSTs.
 
 ---
 
-**End of Documentation**
+## **2. Features**
+
+The system uses a menu-driven interface with the following capabilities:
+
+* **Add Student**
+  Insert a new student record containing ID, Name, Course, and Grade. GPA is auto-calculated.
+
+* **Update Student Grade**
+  Modify an existing record’s grade and GPA.
+
+* **Search Student**
+  Search by **Student ID** and **Course**.
+
+* **Delete Student**
+  Remove a student record or a specific course entry.
+
+* **Display All Students**
+  Shows all records sorted by Student ID in ascending order using in-order traversal.
+
+* **Save to File**
+  Exports all records to a CSV file.
+
+* **Load from File**
+  Rebuilds the AVL tree from a CSV file.
+
+---
+
+## **3. Technical Details**
+
+* **Language:** C++
+* **Data Structure:** AVL Tree
+* **Storage Format:** CSV
+* **Files:**
+
+  * `main.cpp` – User interface, input handling, and main loop
+  * `AVLTree.cpp / AVLTree.h` – AVL logic, rotations, balancing, file I/O
+  * `AVLNode.cpp / AVLNode.h` – Node structure and student record definition
+  * `studentrecord1.csv` – Default persistent data file
+
+---
+
+## **4. Algorithmic Sources**
+
+Standard AVL Tree algorithms were referenced during development.
+
+### **Insertion & Balancing**
+
+* *“Insertion in an AVL Tree”* — GeeksforGeeks (July 23, 2025)
+  [https://www.geeksforgeeks.org/dsa/insertion-in-an-avl-tree/](https://www.geeksforgeeks.org/dsa/insertion-in-an-avl-tree/)
+
+### **Search Operation**
+
+* *“Search in an AVL Tree”* — GeeksforGeeks (July 23, 2025)
+  [https://www.geeksforgeeks.org/dsa/avl-trees-containing-a-parent-node-pointer/](https://www.geeksforgeeks.org/dsa/avl-trees-containing-a-parent-node-pointer/)
+
+### **Deletion**
+
+* *“Deletion in an AVL Tree”* — GeeksforGeeks (June 19, 2025)
+  [https://www.geeksforgeeks.org/dsa/deletion-in-an-avl-tree/](https://www.geeksforgeeks.org/dsa/deletion-in-an-avl-tree/)
+
+### **Display (In-Order Traversal)**
+
+* *“Inorder Traversal of Binary Tree”* — GeeksforGeeks (March 3, 2023)
+  [https://www.geeksforgeeks.org/dsa/inorder-traversal-of-binary-tree/](https://www.geeksforgeeks.org/dsa/inorder-traversal-of-binary-tree/)
+
+---
+
+## **5. How to Build and Run**
+
+### **Prerequisites**
+
+* A C++ compiler (G++ recommended)
+
+---
+
+### **Compilation**
+
+Open your terminal/command prompt in the project folder:
+
+```bash
+g++ main.cpp AVLTree.cpp AVLNode.cpp -o grade_system
+```
+
+---
+
+### **Execution**
+
+#### **Windows**
+
+```bash
+grade_system.exe
+```
+
+#### **Linux / macOS**
+
+```bash
+./grade_system
+```
+
+---
+
+## **6. About**
+
+* **Author:** PS5
+* **Course:** CSC 307 – Data Structures and Algorithm Analysis
+* **Semester:** Fall 2025
+* **License:** MIT License
+
+This project demonstrates how self-balancing binary search trees (specifically AVL Trees) can be applied to real-world data management tasks.
+
+---
+
+## End of Documentation
+
+---
