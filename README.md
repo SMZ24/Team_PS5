@@ -116,7 +116,7 @@ grade_system.exe
 * **Semester:** Fall 2025
 * **License:** MIT License
 
-This project demonstrates how self-balancing binary search trees (specifically AVL Trees) can be applied to real-world data management tasks.
+This program was developed as a semester project to demonstrate the practical application of self-balancing binary search trees using AVL tree in data management systems.
 
 ---
 
