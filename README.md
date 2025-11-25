@@ -46,17 +46,25 @@ When saving/loading, provide the filename including extension (for example `data
 - The program expects filenames with an extension (like `.csv`) when saving/loading.
 
 ## Sources (pseudocode and algorithms)
-The pseudocode and algorithm references used in the project are from GeeksforGeeks as listed in the project document:
+The algorithm references used in the project are from GeeksforGeeks as listed in the project document:
 
 - "Insertion in an AVL Tree", GeeksforGeeks — https://www.geeksforgeeks.org/dsa/insertion-in-an-avl-tree/
 - "Deletion in an AVL Tree", GeeksforGeeks — https://www.geeksforgeeks.org/dsa/deletion-in-an-avl-tree/
 - "Search in an AVL Tree", GeeksforGeeks — https://www.geeksforgeeks.org/dsa/avl-trees-containing-a-parent-node-pointer/
 - "Inorder Traversal of Binary Tree", GeeksforGeeks — https://www.geeksforgeeks.org/dsa/inorder-traversal-of-binary-tree/
 
-(These URLs are cited as in the project design document.)
 
 ## Authors
-See `sth.txt` for the full project architecture and member contributions.
+Team PS5
 
 ## License
-No license specified. Add a license file if you want to make the project open source.
+This project is created for educational purposes as part of CSC 307 coursework.
+
+## Acknowledgement
+- Course Instructor: Prof. Chad McDaniel
+- GeeksforGeeks for AVL Tree algorithm references
+- Team PS5 members for collaborative design and implementation
+
+---
+
+**End of Documentation**
